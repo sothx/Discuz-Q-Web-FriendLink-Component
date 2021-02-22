@@ -4,7 +4,7 @@
 
 **友情链接组件效果demo:**
 
-![demo效果](.\img\demo.png)
+![demo效果](/img/demo.png)
 
 ## 入门
 
