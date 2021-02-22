@@ -4,7 +4,7 @@
 
 **友情链接组件效果demo:**
 
-![demo效果](http://i2.tiimg.com/731749/1f22117829cbc769.png)
+[demo效果](http://i2.tiimg.com/731749/1f22117829cbc769.png)
 
 ## 入门
 
