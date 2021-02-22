@@ -11,7 +11,7 @@
         :key="index"
         class="friendly-link-item"
         :body-style="{ padding: '0px' }"
-        @onClick="clickLink(item.href)"
+        @Click="clickLink(item.href)"
       >
         <el-image
           class="item-img"
