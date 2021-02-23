@@ -27,7 +27,7 @@
       </el-card>
       <div v-if="friendlyLinkList.length === 0" class="no-more">{{ $t('discuzq.list.noData') }}</div>
     </div>
-    <div v-if="friendlyLinkList.length === 2" class="refresh" @click="refresh">
+    <div v-if="showRefresh" class="refresh" @click="refresh">
       <svg-icon type="refresh" class="icon" />
       {{ $t('home.refresh') }}
     </div>
@@ -43,7 +43,8 @@ export default {
   data() {
     return {
       friendlyLinkList: [],
-      loading: false
+      loading: false,
+      showRefresh: false
     };
   },
   mounted() {
@@ -59,6 +60,9 @@ export default {
       this.friendlyLinkList = [];
       this.loading = true;
       try {
+        if (friendlyLinkConfig.length > 2) {
+          this.showRefresh = true;
+        }
         this.friendlyLinkList = await Promise.resolve(tools.randomArrayNum(friendlyLinkConfig, 2));
         this.loading = false;
       } catch (e) {
