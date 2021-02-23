@@ -1,7 +1,7 @@
 /**
  * 从数组随机取多个数组项
  * @param {Array} arr 源数组
- * @param {*} num 取数组的数量
+ * @param {Number} num 取数组的数量
  */
 export const randomArrayNum = (arr, num) => {
   const _arr = JSON.parse(JSON.stringify(arr));
